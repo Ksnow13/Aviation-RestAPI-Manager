@@ -1,4 +1,4 @@
-package com.keyin.passenger;
+package com.keyin.passenger.rest;
 
 
 
