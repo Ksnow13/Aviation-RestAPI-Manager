@@ -1,5 +1,6 @@
 package com.keyin.passenger;
 
+import com.keyin.passenger.Passenger;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
