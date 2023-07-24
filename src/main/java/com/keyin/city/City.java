@@ -14,8 +14,12 @@ public class City {
     private String name;
     private String province;
     private int population;
-    @OneToMany
-    private List<Airport> airports;
+
+   // @OneToMany
+    //private List<Airport> airports;
+
+    public City() {
+    }
 
     public long getId() {
         return id;
@@ -49,11 +53,14 @@ public class City {
         this.population = population;
     }
 
+    /*
     public List<Airport> getAirports() {
-       return airports;
-   }
+        return airports;
+    }
 
     public void setAirports(List<Airport> airports) {
         this.airports = airports;
     }
+
+     */
 }
