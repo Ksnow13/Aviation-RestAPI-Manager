@@ -1,4 +1,4 @@
-package com.keyin.city;
+package com.keyin.city.rest;
 
 import com.keyin.city.City;
 import org.springframework.data.jpa.repository.JpaRepository;

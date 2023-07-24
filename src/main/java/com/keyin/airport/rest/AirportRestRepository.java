@@ -1,4 +1,4 @@
-package com.keyin.airport;
+package com.keyin.airport.rest;
 
 import com.keyin.airport.Airport;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,8 +9,8 @@ import java.util.List;
 
 @RepositoryRestResource(collectionResourceRel = "airport_repo", path = "airport_repo")
 public interface AirportRestRepository extends JpaRepository<Airport, Long> {
-    public List<Airport> findByCode(@Param("code")String code);
 
+    public List<Airport> findByCode(@Param("code")String code);
     public List<Airport> findByCity_name(@Param("city_name")String cityName);
 }
 
