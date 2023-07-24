@@ -16,7 +16,7 @@ public class City {
     private int population;
 
    // @OneToMany
-    //private List<Airport> airports;
+    //private List<Airport> airports;  // fix this
 
     public City() {
     }
