@@ -20,5 +20,8 @@ How To Work the Program:
                          "lastName" : "Doe",
                          "phoneNumber": "(709) 683 0000"
                          }
- - You can do a POST to all the repo links
+ - You can do a POST to all the repo links, look at all the class objects to find the corrcect format for each class
 --------------------------------------------------------------------------------------------------------------------------------
+Relationships
+
+- To setup your relationships you must 
