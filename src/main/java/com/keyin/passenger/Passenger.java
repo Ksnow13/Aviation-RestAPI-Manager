@@ -18,11 +18,11 @@ public class Passenger {
     private String lastName;
     private String phoneNumber;
     @OneToOne
-    private City city;
+    private City city; // Relationship - city that the passenger in located.
     @ManyToMany
-    private List<Airport> airports;
+    private List<Airport> airports; // Relationship - list of airport a passenger has visited.
     @ManyToMany
-    private List<Aircraft> aircrafts;
+    private List<Aircraft> aircrafts; // Relationship - list of aircraft's a passenger has been on.
 
     public long getId() {
         return id;

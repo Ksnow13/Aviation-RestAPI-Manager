@@ -10,6 +10,8 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "city_repo", path = "city_repo")
 public interface CityRestRepository extends JpaRepository<City, Long> {
      public List<City> findByName(@Param("name")String name);
+     public List<City> findByProvince(@Param("province")String province);
 
+     // when provided an airport code, this returns the city that the airport is located in.
      public List<City> findByAirports_code(@Param("code")String code);
 }
