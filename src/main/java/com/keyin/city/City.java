@@ -15,7 +15,7 @@ public class City {
     private String province;
     private int population;
     @OneToMany
-    private List<Airport> airports;
+    private List<Airport> airports; // Relationship - list of airports in city.
 
     public City() {
     }

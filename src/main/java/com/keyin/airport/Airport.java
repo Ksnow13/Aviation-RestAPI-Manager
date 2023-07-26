@@ -13,7 +13,7 @@ public class Airport {
     private String code;
 
     @OneToOne
-    private City city; // this gives a city_id
+    private City city; // Relationship - city that the airport is located in.
 
     public long getId() {
         return id;

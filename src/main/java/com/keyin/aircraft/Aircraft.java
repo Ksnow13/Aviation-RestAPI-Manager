@@ -16,7 +16,7 @@ public class Aircraft {
     private String airLine;
     private int numberOfPassengers;
     @ManyToMany
-    private List<Airport> airports; // many aircraft can land at many airports
+    private List<Airport> airports; // Relationship - airports that aircraft's can land/take off from.
 
     public long getId() {
         return id;
