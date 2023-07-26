@@ -14,9 +14,8 @@ public class City {
     private String name;
     private String province;
     private int population;
-
     @OneToMany
-    private List<Airport> airports;  // fix this
+    private List<Airport> airports;
 
     public City() {
     }
@@ -53,7 +52,7 @@ public class City {
         this.population = population;
     }
 
-    /*
+
     public List<Airport> getAirports() {
         return airports;
     }
@@ -62,5 +61,5 @@ public class City {
         this.airports = airports;
     }
 
-     */
+
 }
