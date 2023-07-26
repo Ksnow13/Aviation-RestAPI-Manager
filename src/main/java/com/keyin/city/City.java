@@ -15,8 +15,8 @@ public class City {
     private String province;
     private int population;
 
-   // @OneToMany
-    //private List<Airport> airports;  // fix this
+    @OneToMany
+    private List<Airport> airports;  // fix this
 
     public City() {
     }

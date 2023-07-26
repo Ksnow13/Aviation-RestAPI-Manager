@@ -13,7 +13,7 @@ public class Airport {
     private String code;
 
     @OneToOne
-    private City city;
+    private City city; // this gives a city_id
 
     public long getId() {
         return id;

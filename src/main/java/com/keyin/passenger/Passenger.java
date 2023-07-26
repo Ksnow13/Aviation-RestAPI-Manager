@@ -1,20 +1,22 @@
 package com.keyin.passenger;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
+import com.keyin.city.City;
+
+import javax.persistence.*;
 
 @Entity
 public class Passenger {
 
     @Id
-    @SequenceGenerator(name = "citizen_sequence", sequenceName = "citizen_sequence", allocationSize = 1, initialValue=1)
-    @GeneratedValue(generator = "citizen_sequence")
+    @SequenceGenerator(name = "passenger_sequence", sequenceName = "passenger_sequence", allocationSize = 1, initialValue=1)
+    @GeneratedValue(generator = "passenger_sequence")
     private long id;
     private String firstName;
-    private String LastName;
+    private String lastName;
     private String phoneNumber;
+
+    @OneToOne
+    private City city;
 
     public long getId() {
         return id;
@@ -33,11 +35,11 @@ public class Passenger {
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getPhoneNumber() {
@@ -46,5 +48,13 @@ public class Passenger {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }
