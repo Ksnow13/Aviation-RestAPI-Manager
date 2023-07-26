@@ -11,5 +11,5 @@ import java.util.List;
 public interface CityRestRepository extends JpaRepository<City, Long> {
      public List<City> findByName(@Param("name")String name);
 
-//    public List<City> findByAirports_code(@Param("code")String code);
+     public List<City> findByAirports_code(@Param("code")String code);
 }
