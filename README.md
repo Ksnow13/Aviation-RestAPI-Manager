@@ -28,10 +28,12 @@ Relationships
 - To assign a city to an airport you must give an airport a city in MySQL Workbench.
 - To see the relationship enter GET city_repo/{id}/city or GET city_repo/{id}airports   in Postman.
 
+
   Passengers & Cities
 - The city a passenger is from.
 - This works the same as (Airport & Cities) above, you can add to it and display it the same way
 - GET passenger_repo/{id}/city  in Postman
+
 
   Aircraft & Airports
 - To Add airports to an aircraft's land/take off list you must do a PATCH on Postman with the link http://localhost:8080/aircraft_repo/{id}/aircrafts
@@ -39,12 +41,14 @@ Relationships
   to add an airport to the list, put http://localhost:8080/aircraft_repo/{id} in the body as text.
 - To see the list enter GET http://localhost:8080/aircraft_repo/{id}/aircrafts
 
+
   Passenger & Airports
 - List of airports a passenger has visited.
 - This works the same as (Aircraft & Airport) above, you can add to it and display it the same way
 - do a PATCH on Postman with the link http://localhost:8080/passenger_repo/{id}/airports
 - to add an airport to the list, put http://localhost:8080/airport_repo/{id} in the body as text.
 - To see the list enter GET http://localhost:8080/passenger/{id}/airports
+
 
   Passenger & Aircraft's
 - List of aircraft's a passenger has been on.
